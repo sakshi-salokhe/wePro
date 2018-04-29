@@ -16,7 +16,7 @@
                 controller: "ManagerHireAssess",
 				controllerAs: "model"
             })
-            .when("/takeassesment", {
+            .when("/takeassessment", {
                 templateUrl: "views/takeassessment/templates/takeassessment.view.client.html",
                 controller: "TakeAssessmentController",
                 controllerAs: "model"
@@ -61,6 +61,13 @@
                 controller: "UserClosedProjects",
                 controllerAs: "model"
             })
+            
+            .when("/dashboard", {
+                templateUrl: "views/Dashboard/templates/after_login.views.client.html",
+                controller: "after_login",
+                controllerAs: "model"
+            })
+            
             .otherwise({
                 redirectTo: "/"
             });
